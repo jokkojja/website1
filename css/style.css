@@ -72,3 +72,35 @@ font-weight: 300;
 	height: 60px;
 	margin-top: 11px;
 }
+.col
+{
+	display: inline-block;
+	text-align: center;
+	margin: 10px 50px;  
+}
+.feature-header{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 24px;
+}
+.feature
+{
+	text-align: center;
+	margin-top: 60px;
+	margin: 60px auto;
+
+}
+.feature-btn
+{
+	font-size: 18px;
+	font-weight: 900;
+	color:#fff;
+	background-color: #2727d9;
+	border:none;
+	width: 300px;
+	height: 60px;
+	margin-top: 11px;
+	margin:11px auto;
+    display: block;
+}
