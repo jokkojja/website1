@@ -1,0 +1,28 @@
+.logo{
+	margin-left:161px;
+	margin-top: 122px;
+	position: absolute;
+
+}
+.logo_min{
+	margin-left:200px;
+	font-size:12.5px;
+	line-height:0px;
+	position: absolute;
+}
+.circle{
+
+
+position: relative;
+width: 125px;
+height: 125px;
+left: 113px;
+top: 71px;
+padding-left:117px;
+ -moz-border-radius: 62.5px;
+    -webkit-border-radius: 62.5px;
+    border-radius: 62.5px;
+
+background: #9E4747;
+
+}
