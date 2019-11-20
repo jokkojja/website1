@@ -31,3 +31,31 @@ top: 71px;
 
 background: #9E4747;
 }
+.for-btn{
+	position: absolute;
+	top: 60px;
+	left: 1293px;
+	font-size:35px;
+	border: 0;
+	background-color:#212021; 
+	color: #ffff;
+
+}
+.for-btn2{
+	position: absolute;
+	top: 60px;
+	left: 1515px;
+	font-size:35px;
+	 text-align: center;
+  
+  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  
+  border-color: #dc924e;
+  border-radius: 100px;
+  border-width:4px; 
+	background-color:#212021; 
+	color: #ffff;
+}
+.reg{
+	
+}
