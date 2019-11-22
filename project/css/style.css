@@ -57,10 +57,11 @@ background: #9E4747;
   text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
   
   border-color: #dc924e;
-  border-radius: 100px;
-  border-width:4px; 
+ border: 3px solid #dc924e;
+  border-radius: 15px;
 	background-color:#212021; 
 	color: #ffff;
+
 }
 .twitter{
 	position: absolute;
@@ -91,7 +92,7 @@ background: #9E4747;
 	left:819px;
 	color:#fff4f4;
 	font-size:38px; 
-	font-weight: 2px;
+	
 	 font-weight:  lighter;
 	 letter-spacing:0.5px; 
 	 opacity:1; 
@@ -99,11 +100,191 @@ background: #9E4747;
 }
 .circle2{
 position: absolute;
-left: 897px;
+left: 885px;
 top: 960px;
 height:100px; 
 width:110px;
 
 
 }
+.service{
+	
+	font-size:45px;
+	top:1150px;
+	position: absolute; 
+	left: 860px;
+	letter-spacing:2px; 
 
+
+}
+.uslugi{
+	height:1080px;
+ width:1920px;   
+}
+.kvadratik{
+
+
+position: absolute;
+width: 465px;
+height: 272px;
+left: 162px;
+top: 1300px;
+background: #FFBA76;
+z-index:0; 
+
+}
+.foto1{
+	left: 190px;
+	top:1330px;
+	position: absolute;
+}
+.rec{
+	left: 890px;
+	position: absolute;
+	top:1450px;
+	 font-weight:lighter;
+	 font-size:50px; 
+	  
+}
+.ramka{
+
+position: absolute;
+width: 285px;
+height: 100px;
+left: 770px;
+top: 1640px;
+
+background: #FFBA76;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 102px;
+
+}
+.value1{
+	font-size: 50px;
+	
+	left:63px;
+	position: absolute;
+	bottom:15px;
+}
+.kvadratik2{
+position: absolute;
+width: 465px;
+height: 272px;
+left: 1290px;
+top: 1800px;
+background: #FFBA76;
+z-index:0; 
+}
+.foto2{
+	position: absolute;
+	left: 1100px;
+    
+    top:1832px;
+	
+}
+.rec2{
+	position: absolute;
+	left: 800px;	
+	top: 1960px;
+	font-size:50px;
+	font-weight:lighter;
+}
+.ramka2{
+
+position: absolute;
+width: 285px;
+height: 100px;
+left: 860px;
+top: 2145px;
+
+background: #FFBA76;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 102px;
+}
+.value2{
+	font-size: 50px;
+	
+	left:45px;
+	position: absolute;
+	bottom:15px;
+}
+.foto3{
+	left: 190px;
+    top:2334px;
+    position: absolute;
+}
+
+
+.kvadratik3{
+
+
+position: absolute;
+width: 465px;
+height: 272px;
+left: 162px;
+top: 2305px;
+background: #FFBA76;
+z-index:0; 
+}
+.ramka3{
+
+position: absolute;
+width: 285px;
+height: 100px;
+left: 770px;
+top: 2640px;
+
+background: #FFBA76;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 102px;
+}
+.value3{
+	font-size: 50px;
+	
+	left:45px;
+	position: absolute;
+	bottom:15px;
+}
+.rec3{
+	left: 890px;
+	position: absolute;
+	top:2450px;
+	 font-weight:lighter;
+	 font-size:50px; 
+	  
+}
+.rec4{
+	position: absolute;
+	left:560px;	
+	top: 3000px;
+	font-size:50px;
+	font-weight:lighter;
+}
+.kvadratik4{
+position: absolute;
+width: 465px;
+height: 272px;
+left: 1290px;
+top: 2800px;
+background: #FFBA76;
+z-index:0; 
+}
+.foto4{
+	position: absolute;
+	left: 1100px;
+    
+    top:2834px;
+}
+.ramka4{
+	position: absolute;
+width: 285px;
+height: 100px;
+left: 870px;
+top: 3140px;
+
+background: #FFBA76;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 102px;
+z-index: 1;
+
+}
