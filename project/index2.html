@@ -5,6 +5,106 @@
 	<title>Студия</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Waterwheel Carousel Demo</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+
+    <style type="text/css">
+      body {
+        font-family:Arial;
+        font-size:12px;
+        background:#ededed;
+      }
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:960px;
+        border:1px solid #222;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+        left: 460px;
+        top: 1700px;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+      #prev{
+        left:480px;
+        position: absolute;
+        top:3765px;
+
+      }
+      #next{
+      position: absolute;
+      left:1370px;
+      top:3765px;
+    }
+
+    </style>
 	
 </head>
 <body>
@@ -76,34 +176,32 @@
 	</div>
 	<div class="container6">
 		<h2 class ="recommend"><strong>Отзывы</strong></h2>
-		<ul id="sb-slider" class="sb-slider">
+		    <div id="carousel">
+      <a href="#"><img src="img/1.jpg" id="item-1" /></a>
+      <a href="#"><img src="img/2.jpg" id="item-2" /></a>
+      <a href="#"><img src="img/3.jpg" id="item-3" /></a>
+      <a href="#"><img src="img/4.jpg" id="item-4" /></a>
+      <a href="#"><img src="img/5.jpg" id="item-5" /></a>
+      <a href="#"><img src="img/6.jpg" id="item-6" /></a>
+      <a href="#"><img src="img/7.jpg" id="item-7" /></a>
+      <a href="#"><img src="img/8.jpg" id="item-8" /></a>
+      <a href="#"><img src="img/9.jpg" id="item-9" /></a>
+    </div>
+    <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+
+
+    <br/>
+
+    <div class="split-left">
+      
+    
+    </div>
+    <div class="split-right">
+     
+
+      </div>
+		
  
-    <li>
-        <a href="#" target="_blank">
-            <img src="img/slider_1.jpg" alt="image1"/>
-        </a>
-        <div class="sb-description">
-            <h3>Описание</h3>
-        </div>
-    </li>
-    <li>
-        <a href="#" target="_blank">
-            <img src="img/slider_2.jpg" alt="image1"/>
-        </a>
-        <div class="sb-description">
-            <h3>Описание</h3>
-        </div>
-    </li>
-    <li>
-        <a href="#" target="_blank">
-            <img src="img/slider_3.jpg" alt="image1"/>
-        </a>
-        <div class="sb-description">
-            <h3>Описание</h3>
-        </div>
-    </li>
- 
-</div>
-<script src="js/MySlick.js"></script>
+>
 </body>
 </html>
