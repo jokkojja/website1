@@ -104,6 +104,7 @@ left: 885px;
 top: 960px;
 height:100px; 
 width:110px;
+z-index:0;
 
 
 }
@@ -297,8 +298,8 @@ z-index: 1;
 	top: 3500px;
 	position: absolute;
 	
-	left: 860px;
-	letter-spacing:2px; 
+	left: 840px;
+	letter-spacing:0px; 
 	font-size:45px;
 }
 .clear {
@@ -306,5 +307,12 @@ z-index: 1;
 	height: 1px;
 	clear:both;
 	zoom: 1;
+}
+.player{
+	top: 4322px;
+position: absolute;
+	height: 1080px;
+	width: 1920px;
+	background: 
 }
 
