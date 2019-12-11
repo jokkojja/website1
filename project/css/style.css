@@ -96,6 +96,7 @@ background: #9E4747;
 	 font-weight:  lighter;
 	 letter-spacing:0.5px; 
 	 opacity:1; 
+	 z-index:1; 
 
 }
 .circle2{
@@ -308,18 +309,81 @@ z-index: 1;
 	clear:both;
 	zoom: 1;
 }
-.player{
-	top: 4322px;
-position: absolute;
-	height: 1080px;
-	width: 1920px;
-	background: 
-}
-.elfsight-app-728b2c75-b206-4b86-88ec-a52fb803e800{
-	top: 4700px;
-	z-index: 1;
+
+.lastBlock{
 	position: absolute;
-	opacity:.8;
+	top: 4500px;
+	left: 200px;
+
+}
+.data{
+	letter-spacing:0px; 
+	font-weight:lighter;
+	font-size:50px;
+
+}
+.proc10{
+	font-weight:bolder;
+
+}
+.text{
+	font-size: 35px;
+	left: 0px;
+	position: absolute;
+	opacity:1;
+	top: 130px;
+	border:none;
+	z-index:1; 
+
+}
+.for-btn1{
+	position: absolute;
+	left: 0px;
+	top:210px;
+	border: 0;
+	background: #ffba76;
+border-radius: 150px;
+height:100px;
+width:450px; 
+}
+.text1{
+	width:300px;
+}
+.map{
+	position: absolute;
+	left: 800px;
+	top:-130px;
+}
+.down{
+position: absolute;
+width:1920px;
+height:100px;
+left: -200px;
+top: 470px;
+background: #DC924E;
+z-index:0; 
+
+}
+.email{
+	position: absolute;
+	top:505px;
+	color:#000000;
+}
+.phone{
+	position: absolute;
+	top:505px;
+	left: 1175px;
+	 
+}
+.eclipse{
+position: absolute;
+   width: 300px; height: 150px; 
+   background: #000000;
+   border: 1px solid #000000;
+   border-radius: 150px    ;
+   top:440px;
+   left: 550px;
+  
 
 }
 
