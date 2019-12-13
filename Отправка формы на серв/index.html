@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Студия</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Waterwheel Carousel Demo</title>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var carousel = $("#carousel").waterwheelCarousel({
+          flankingItems: 3,
+          movingToCenter: function ($item) {
+            $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedToCenter: function ($item) {
+            $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movingFromCenter: function ($item) {
+            $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          movedFromCenter: function ($item) {
+            $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+          },
+          clickedCenter: function ($item) {
+            $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+          }
+        });
+
+        $('#prev').bind('click', function () {
+          carousel.prev();
+          return false
+        });
+
+        $('#next').bind('click', function () {
+          carousel.next();
+          return false;
+        });
+
+        $('#reload').bind('click', function () {
+          newOptions = eval("(" + $('#newoptions').val() + ")");
+          carousel.reload(newOptions);
+          return false;
+        });
+
+      });
+    </script>
+
+    <style type="text/css">
+      body {
+  
+        font-size:12px;
+        background:#ededed;
+      }
+      
+      #carousel {
+        width:1500px;
+        
+        height:700px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#ffba76;
+        left: 200px;
+        top: 1700px;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+      #prev{
+        left:480px;
+        position: absolute;
+        top:3965px;
+
+      }
+      #next{
+      position: absolute;
+      left:1370px;
+     top:3965px;
+	
+    }
+
+    </style>
+	
+</head>
+<body>
+
+<div class="section_main">
+	<div class="container1">
+		<div class="header">
+			<img src="img/shapka.jpg" alt="">
+
+			 <h2 class="logo">
+			 	
+			 	<strong>
+			 		Yumenoya
+			 	</strong>
+			 	
+			 </h2>
+			 <div class="circle"></div>
+			 <h2 class="logo_min">Студия звукозаписи</h2>
+			 <button class ="for-btn">Sign Up </button>
+			  <button class ="for-btn2">Log In </button>
+			 
+			 <h2 class="learn_more">Узнать больше</h2>
+			 <img class ="circle2" src="img/узнать больше.png" alt="">
+		
+
+		<div class="links">
+		<a href="https://twitter.com/galievavia"><img class ="twitter" src="img/твиттер.png" alt=""></a>
+
+	
+		<a href="https://www.youtube.com/watch?v=_S7WEVLbQ-Y&feature=emb_logo"><img class ="youtube" src="img/ютуб.jpg" alt=""></a>
+	
+
+		<a href="https://vk.com/yumenoyarecords"><img class ="vk" src="img/vk.png" alt="" width="360" height="626"></a>
+			
+			</div>
+		</div>
+	
+
+	
+		</div> 
+		
+	</div>
+	<div class="uslugi">
+		<div class="container2"><h2 class ="service"><strong>Услуги</strong></h2>
+		<figure class="kvadratik"></figure>
+		<figure class ="foto1"><img src="img/микро_в_услуги.png" width="626" height="360" alt=""></figure>
+		</div>
+		<h2 class ="rec">Запись</h2>
+		<div class="container3">
+		<figure class="ramka"><strong class ="value1">250₽/ч</strong></figure>
+		<figure class="kvadratik2"></figure>
+		<figure class ="foto2"><img src="img/кнопочки.png" width="626" height="360" alt=""></figure>
+		<h2 class ="rec2">Сведение</h2>
+</div>
+<div class="container4">
+<h2 class ="rec3">Дизайн</h2>
+<figure class="ramka2"><strong class ="value2">От 800₽</strong></figure>
+<figure class="kvadratik3"></figure>
+		<figure class ="foto3"><img src="img/мужик_с_планшетом.png" width="626" height="360" alt=""></figure>
+		<figure class="ramka3"><strong class ="value3">От 800₽</strong></figure>
+
+	</div>
+	<div class="container5">
+		<h2 class ="rec4">Продюсирование</h2>
+		<figure class="ramka4"><strong class ="value3">От 1500₽</strong></figure>
+		<figure class="kvadratik4"></figure>
+		<figure class ="foto4"><img src="img/кнопочки2.png" width="626" height="360" alt=""></figure>
+		
+	</div>
+	<div class="container6">
+
+		<h2 class ="recommend"><strong>Отзывы</strong></h2>
+		    <div id="carousel">
+      <a href="#"><img src="img/1.jpg" id="item-1" /></a>
+      <a href="#"><img src="img/2.jpg" id="item-2" /></a>
+      <a href="#"><img src="img/3.jpg" id="item-3" /></a>
+      <a href="#"><img src="img/4.jpg" id="item-4" /></a>
+      <a href="#"><img src="img/5.jpg" id="item-5" /></a>
+      <a href="#"><img src="img/6.jpg" id="item-6" /></a>
+      <a href="#"><img src="img/7.jpg" id="item-7" /></a>
+      <a href="#"><img src="img/8.jpg" id="item-8" /></a>
+      <a href="#"><img src="img/9.jpg" id="item-9" /></a>
+    </div>
+    <a href="#" id="prev">Prev</a> | <a href="#" id="next">Next</a>
+
+
+    <br/>
+
+    <div class="split-left">
+      
+    
+    </div>
+    <div class="split-right">
+     
+
+      </div>
+      <div class="lastBlock" >
+      	<div class="vizita">
+      		<h2 class ="data"><strong>Свяжитесь с нами  <br> и мы подарим вам <color  class ="proc10" style="color:#dc924e">10% скидку!</color></strong><br></h2>
+      		<div class="text">
+				<form action="send.php" method="post">
+					<input type="text" name="fio" placeholder="Укажите ФИО" required>
+					<input type="text" name="email" placeholder="Укажите e-mail" required>
+					<input type="submit" value="Отправить">
+				</form>
+      		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1124.132257158885!2d85.1566276966132!3d52.51063411287041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42c4a983af2e555b%3A0x5ceb23bc08cd96d0!2z0YPQuy4g0JLQsNGB0LjQu9GM0LXQstCwLCAzNSwg0JHQuNC50YHQuiwg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTkzMTE!5e0!3m2!1sru!2sru!4v1576059626016!5m2!1sru!2sru" width="690" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
+      		<figure class ="down"></figure>
+      		<h2 class ="email">yumenoya@mail.ru</h2>
+      		<h2 class ="phone">+79069699000</h2>
+      		<figure class="eclipse"></figure>
+
+
+      		</div>	
+
+      	</div>
+      </div>
+  </div>
+      
+		
+ 
+
+</body>
+</html>
