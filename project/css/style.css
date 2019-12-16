@@ -3,9 +3,9 @@
 	height:1920px;  
 }
 .logo{
-	left:161px;
-	top: 109px;
-	position: absolute;
+	left:15%;
+	top: -50.5%;
+	position: relative;
 	color: #ffff;
 	font-size:50px;
 	z-index:1; 
@@ -13,22 +13,22 @@
 
 }
 .logo_min{
-	top: 175px;
-	left:238px;
+	top: -50.5%;
+	left:22%;
 	font-size:16px;
 	line-height:0px;
-    position: absolute;
+    position: relative;
 	color:#d5d5d5;
 	letter-spacing: 1px; 
 }
 .circle{
 
 position: absolute;
-width: 125px;
-height: 125px;
-left: 107px;
-top: 71px;
- border-radius: 62.5px;
+width: 6.5%;
+height: 13%;
+left: 5.6%;
+top: 7.5%;
+ border-radius: 50% 50% 50% 50%;
 
 background: #9E4747;
 }
@@ -372,18 +372,43 @@ z-index:0;
 .phone{
 	position: absolute;
 	top:505px;
-	left: 1175px;
+	left: 1200px;	
+	word-spacing: -10px;
+
 	 
 }
 .eclipse{
 position: absolute;
-   width: 300px; height: 150px; 
+   width: 250px; height: 100px; 
    background: #000000;
    border: 1px solid #000000;
-   border-radius: 150px    ;
-   top:440px;
-   left: 550px;
+   border-radius: 40px     ;
+   top:470px;
+   left: 590px;
   
 
 }
+.lastlogo{
+	position: absolute;
+	top:427px;
+	left:-250px;
+	color:#ffffff;
+	font-size:40px;
 
+
+}
+.circle3{
+
+
+position: absolute;
+width: 62px;
+height: 62px;
+left: 620px;
+top: 487px;
+border-radius:100px;
+
+
+border: 2px solid #ffffff;
+box-sizing: border-box;
+
+}
