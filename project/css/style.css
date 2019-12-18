@@ -339,7 +339,7 @@ z-index: 1;
 .for-btn1{
 	position: absolute;
 	left: 0px;
-	top:210px;
+	top:200px;
 	border: 0;
 	background: #ffba76;
 border-radius: 150px;
@@ -412,3 +412,4 @@ border: 2px solid #ffffff;
 box-sizing: border-box;
 
 }
+
